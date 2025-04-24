@@ -6,6 +6,8 @@ html, body{
   font-family: "Space Grotesk", sans-serif;
   background: black;
   color:#f3f4f6 ;
+  overflow-x: hidden;
+
 }
 
 @layer utilities{
