@@ -3,7 +3,7 @@ import "./About.css";
 import { RevealOnScroll } from "../../RevealOnScroll/RevealOnScroll";
 
 export function About(): JSX.Element {
-    const frontendSkills = ["HTML","React", "TypeScript", "Redux"];
+    const frontendSkills = ["HTML","React","JavaScript", "TypeScript", "Redux"];
     const backendSkills = ["Java", "Spring", "REST", "Design Patterns", "OOP", "SQL"];
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-20">
