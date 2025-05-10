@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website, built with **React**, **TypeScript**, and **Vite**.  
+This project serves as a digital showcase of my skills, projects, and professional journey.  
+You can view the live site here: [mentzer1.github.io/Personal-Portfolio](https://mentzer1.github.io/Personal-Portfolio/).
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Tech Stack**: Utilizes React for building user interfaces, TypeScript for type safety, and Vite for fast development and build processes.
+- **Responsive Design**: Ensures optimal viewing experience across a wide range of devices.
+- **Interactive UI**: Engaging and intuitive user interface to highlight projects and skills.
+- **Easy Deployment**: Hosted seamlessly on GitHub Pages for accessibility.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [ESLint](https://eslint.org/)
+- [GitHub Pages](https://pages.github.com/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Project Structure
+
+```
+├── public/             # Static assets
+├── src/                # Source code
+│   ├── components/     # Reusable components
+│   ├── assets/         # Images and other assets
+│   ├── App.tsx         # Main application component
+│   └── main.tsx        # Entry point
+├── index.html          # HTML template
+├── package.json        # Project metadata and dependencies
+├── tsconfig.json       # TypeScript configuration
+└── vite.config.ts      # Vite configuration
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run this project locally, follow these steps:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Mentzer1/Personal-Portfolio.git
+   cd Personal-Portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at `http://localhost:5173/` by default.
+
+## 🚀 Deployment
+
+This project is deployed using **GitHub Pages**.  
+To deploy your own version:
+
+1. **Build the project:**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to GitHub Pages:**
+   You can use the `gh-pages` branch to host the `dist` folder. Consider using the [`gh-pages`](https://www.npmjs.com/package/gh-pages) package for easier deployment.
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+If you have suggestions for improvements or find any issues, feel free to open an [issue](https://github.com/Mentzer1/Personal-Portfolio/issues) or submit a [pull request](https://github.com/Mentzer1/Personal-Portfolio/pulls).
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
